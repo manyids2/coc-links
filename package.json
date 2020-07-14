@@ -1,0 +1,68 @@
+{
+  "name": "coc-links",
+  "version": "0.0.1",
+  "description": "vimwiki style links for coc.nvim",
+  "scripts": {},
+  "engines": {
+    "coc": ">=0.0.57"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/manyids2/coc-links.git"
+  },
+  "keywords": [
+    "coc.nvim",
+    "links"
+  ],
+  "activationEvents": [
+    "*"
+  ],
+  "contributes": {
+    "configuration": {
+      "type": "object",
+      "properties": {
+        "coc.source.links.enable": {
+          "type": "boolean",
+          "default": true
+        },
+        "coc.source.links.shortcut": {
+          "type": "string",
+          "default": "T"
+        },
+        "coc.source.links.priority": {
+          "type": "integer",
+          "default": 3
+        },
+        "coc.source.links.disableSyntaxes": {
+          "type": "array",
+          "default": [],
+          "items": {
+            "type": "string"
+          }
+        },
+        "coc.source.links.filetypes": {
+          "type": [
+            "array",
+            "null"
+          ],
+          "default": null,
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  },
+  "author": "fthorde@nowhere.com",
+  "license": "MIT",
+  "homepage": "https://github.com/manyids2/coc-links",
+  "devDependencies": {
+    "coc.nvim": ">=0.0.57",
+    "eslint": "^7.4.0",
+    "eslint-config-standard": "^14.1.1",
+    "eslint-plugin-import": "^2.22.0",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.0.1"
+  }
+}
